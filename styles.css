@@ -1,13 +1,12 @@
 /* Общие стили для страницы */
 body {
-    font-family: 'Times New Roman', Times, serif, 'Times New Roman', Times, serif; /* Шрифт для всей страницы */
+    font-family: 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
-    background-color: black;/* Светлый фон */
+    background-color: black; /* Светлый фон */
     background-repeat: no-repeat;
     background-size: cover;
-    
     color: #333; /* Темный текст */
 }
 
@@ -20,7 +19,7 @@ body {
     margin-top: 20px;
     font-weight: 700;
     box-shadow: #a0a39e 5px 2px 11px 1px;
-    background-image:url("assets/images/back/myat.jpg"); /* Градиентный фон */
+    background-image: url("assets/images/back/myat.jpg"); /* Градиентный фон */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -47,10 +46,29 @@ body {
 /* Стили для категорий */
 .categories {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     margin-top: 30px;
     padding-bottom: 20px;
+    overflow-x: auto; /* Добавляет горизонтальный скролл */
+    -webkit-overflow-scrolling: touch; /* Для мобильных устройств */
+    padding-bottom: 10px;
+    scrollbar-width: thin; /* Для Firefox, тонкий скролл */
+    scrollbar-color: transparent transparent; /* Скролл без цвета (невидимый) */
+}
+
+/* Убираем скроллбар для Webkit-браузеров (Chrome, Safari) */
+.categories::-webkit-scrollbar {
+    width: 0px; /* Скрываем скроллбар */
+    height: 0px; /* Скрываем скроллбар */
+}
+
+.categories::-webkit-scrollbar-track {
+    background: transparent; /* Скрываем дорожку скроллбар */
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background: transparent; /* Скрываем ползунок скроллбар */
 }
 
 /* Стили для кнопок категорий */
@@ -68,6 +86,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    flex-shrink: 0; /* Запрещает сжиматься кнопкам */
 }
 
 .category:hover {
@@ -113,7 +132,7 @@ body {
 
 /* Стили для кнопки заголовка категории */
 .menu-category-title {
-    background-image:url("assets/images/back/myat.jpg");
+    background-image: url("assets/images/back/myat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -142,7 +161,7 @@ body {
 }
 
 .menu-items li {
-    background:url('assets/images/back/myat.jpg') #ffffff85;
+    background: url('assets/images/back/myat.jpg') #ffffff85;
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
