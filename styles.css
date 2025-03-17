@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:black;
+    background-color: black;
     background-size: cover; /* Растягивает фон на весь экран */
     color: #333;
     text-align: center;
@@ -34,7 +34,6 @@ header video {
     transform: translate(-50%, -50%); /* Центрируем видео */
     z-index: -1; /* Отправляем видео на задний план */
 }
-
 /* Контейнер для видео */
 .video-container {
     position: relative;
@@ -52,30 +51,71 @@ header video {
 
 
 
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px; /* Увеличил отступ сверху */
-    padding-top: 20px; /* Дополнительный отступ для мобильных устройств */
+.menum {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 180px; /* Увеличен отступ сверху для сдвига вниз */
 }
 
+/* Контейнер для категорий */
+.categories {
+    display: flex;
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    gap: 20px; /* Расстояние между кнопками */
+    margin-top: 50px;
+}
 
+/* Кнопки категорий с фоновыми изображениями */
 .category {
     text-decoration: none;
-    color: #5a4d3c; /* Тёплый коричневый */
-    background: linear-gradient(135deg, #117c16, #ffbb80);
+    color: white; /* Белый цвет текста */
+    background-image: url('assets/images/back/miata1.JPG'); /* Укажи путь к картинке */
+    background-size: cover; /* Растягиваем изображение на всю кнопку */
+    background-position: center; /* Центрируем картинку */
     padding: 15px 20px;
     margin: 10px;
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* Чтобы кнопки располагались бок о бок */
+    text-align: center; /* Центрируем текст */
 }
 
 .category:hover {
     transform: scale(1.07);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* Подгоняем текст поверх изображения */
+.category span {
+    font-size: 20px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Тень для текста */
+}
+
+
+.menu-list {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 80%;
+    display: none; /* Скрыто по умолчанию */
+}
+
+.menu-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 5px 0;
+}
+
 
 /* Меню */
 #menu-items {
@@ -87,7 +127,7 @@ header video {
 
 /* Карточка блюда */
 .menu-item {
-    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    background-image: url('assets/images/back/myat.jpg'); /* Полупрозрачный фон */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
