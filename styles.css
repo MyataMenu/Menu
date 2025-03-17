@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-  background: url('https://github.com/MyataMenu/Menu/blob/main/assets/images/back/myat.jpg?raw=true') no-repeat center center;
-
-
-    background-size: cover;
-    background-position: center;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: url('/assets/images/back/myat.jpg') no-repeat center center fixed;
+    background-size: cover; /* Растягивает фон на весь экран */
     color: #333;
     text-align: center;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap') crossorigin="anonymous";
 
