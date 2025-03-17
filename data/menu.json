@@ -1,0 +1,32 @@
+{
+    "categories": {
+        "soups": {
+            "name": "Супы",
+            "items": [
+                {
+                    "name": "Борщ",
+                    "description": "Традиционный русский борщ со сметаной",
+                    "price": "250",
+                    "image": "assets/images/borscht.jpg"
+                },
+                {
+                    "name": "Солянка",
+                    "description": "Насыщенный мясной суп",
+                    "price": "280",
+                    "image": "assets/images/solyanka.jpg"
+                }
+            ]
+        },
+        "main": {
+            "name": "Горячее",
+            "items": [
+                {
+                    "name": "Стейк",
+                    "description": "Сочный говяжий стейк с гарниром",
+                    "price": "1200",
+                    "image": "assets/images/steak.jpg"
+                }
+            ]
+        }
+    }
+}
