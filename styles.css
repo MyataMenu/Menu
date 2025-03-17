@@ -72,7 +72,7 @@ header video {
 .category {
     text-decoration: none;
     color: white; /* Белый цвет текста */
-    background-image: url('assets/images/back/miata1.JPG'); /* Укажи путь к картинке */
+    background-image: url('assets/images/back/myat.jpg'); /* Укажи путь к картинке */
     background-size: cover; /* Растягиваем изображение на всю кнопку */
     background-position: center; /* Центрируем картинку */
     padding: 15px 20px;
@@ -127,7 +127,7 @@ header video {
 
 /* Карточка блюда */
 .menu-item {
-    background-image: url('assets/images/back/myat.jpg'); /* Полупрозрачный фон */
+    background-image: url('assets/images/back/ml-009.jpg'); /* Полупрозрачный фон */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
