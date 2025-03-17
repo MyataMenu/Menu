@@ -27,12 +27,15 @@
         </div>
     </main>
    
-<script>
+<script defer>
     document.addEventListener("DOMContentLoaded", function () {
         let video = document.getElementById("header-video");
-        video.play();
+        if (video) {
+            video.play().catch(error => console.error("Ошибка при запуске видео:", error));
+        }
     });
 </script>
+
 
 </body>
 </html>
