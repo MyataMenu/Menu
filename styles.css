@@ -58,13 +58,14 @@ header video {
 
 
 
-/* Категории */
 .categories {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px; /* Увеличил отступ сверху */
+    padding-top: 20px; /* Дополнительный отступ для мобильных устройств */
 }
+
 
 .category {
     text-decoration: none;
