@@ -21,35 +21,29 @@
         <a href="#" class="category" onclick="toggleMenu('kitchen')"><span>🍽 Кухня</span></a>
         <a href="#" class="category" onclick="toggleMenu('bar')"><span>🍸 Бар</span></a>
         <div class="category" onclick="toggleMenu('hookah')">
-            <img src="assets/images/back/icons8.png" alt="Hookah Icon" class="category-icon">
-            <span>Hookah</span>
+            <img src="assets/icons/icons8.png" alt="Hookah Icon" class="category-icon">
+            <span>Чальян</span>
         </div>
+        <!-- Добавим новые кнопки -->
+        <a href="#" class="category" onclick="toggleMenu('desserts')"><span>🍰 Десерты</span></a>
+        <a href="#" class="category" onclick="toggleMenu('drinks')"><span>🥤 Напитки</span></a>
+        <a href="#" class="category" onclick="toggleMenu('salads')"><span>🥗 Салаты</span></a>
+        <a href="#" class="category" onclick="toggleMenu('sushi')"><span>🍣 Суши</span></a>
+        <a href="#" class="category" onclick="toggleMenu('pasta')"><span>🍝 Паста</span></a>
+        <a href="#" class="category" onclick="toggleMenu('pizza')"><span>🍕 Пицца</span></a>
+        <a href="#" class="category" onclick="toggleMenu('seafood')"><span>🦞 Морепродукты</span></a>
+        <a href="#" class="category" onclick="toggleMenu('burgers')"><span>🍔 Бургеры</span></a>
+        <a href="#" class="category" onclick="toggleMenu('steaks')"><span>🥩 Стейки</span></a>
+        <a href="#" class="category" onclick="toggleMenu('sauces')"><span>🍯 Соусы</span></a>
     </div>
 
     <div class="menu-list">
         <div class="menu-category" id="kitchen">
             <button class="menu-category-title">Кухня</button>
             <ul class="menu-items">
-                <li>ХОЛОДНЫЕ ЗАКУСКИ</li>
-                <li>САЛАТЫ</li>
-                <li>ПИВНОЙ СЕТ №1</li>
-                <li>ПИВНОЙ СЕТ №2</li>
-                <li>ПИВНОЙ СЕТ №3</li>
-                <li>ЗАКУСКИ К ПИВУ</li>
-                <li>ПЕРВЫЕ БЛЮДА</li>
-                <li>ВТОРЫЕ БЛЛЮДА ИЗ ПТИЦЫ</li>
-                <li>ВТОРЫЕ БЛЮДА МЯСНЫЕ</li>
-                <li>ВТОРЫЕ БЛЮДА РЫБНЫЕ</li>
-                <li>СТЕЙКИ</li>
-                <li>МАНГАЛ</li>
-                <li>ПАСТА</li>
-                <li>ПИЦЦЫ</li>
-                <li>STREETFOOD</li>
-                <li>ГАРНИРЫ</li>
-                <li>РОЛЛЫ</li>
-                <li>СУШИ</li>
-                <li>БЛЮДА НА КОМПАНИЮ</li>
-                <li>ДЕСЕРТЫ</li>
+                <li>Борщ</li>
+                <li>Суп-пюре</li>
+                <li>Рассольник</li>
             </ul>
         </div>
         <div class="menu-category" id="bar">
@@ -66,6 +60,87 @@
                 <li>Фрукты</li>
                 <li>Мята</li>
                 <li>Табак</li>
+            </ul>
+        </div>
+        <!-- Добавим меню для новых категорий -->
+        <div class="menu-category" id="desserts">
+            <button class="menu-category-title">Десерты</button>
+            <ul class="menu-items">
+                <li>Торт</li>
+                <li>Пирог</li>
+                <li>Печенье</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="drinks">
+            <button class="menu-category-title">Напитки</button>
+            <ul class="menu-items">
+                <li>Кофе</li>
+                <li>Чай</li>
+                <li>Соки</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="salads">
+            <button class="menu-category-title">Салаты</button>
+            <ul class="menu-items">
+                <li>Цезарь</li>
+                <li>Оливье</li>
+                <li>Греческий</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="sushi">
+            <button class="menu-category-title">Суши</button>
+            <ul class="menu-items">
+                <li>Маки</li>
+                <li>Сашими</li>
+                <li>Нигири</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="pasta">
+            <button class="menu-category-title">Паста</button>
+            <ul class="menu-items">
+                <li>Спагетти</li>
+                <li>Пенне</li>
+                <li>Ригатони</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="pizza">
+            <button class="menu-category-title">Пицца</button>
+            <ul class="menu-items">
+                <li>Маргарита</li>
+                <li>Пепперони</li>
+                <li>Гавайская</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="seafood">
+            <button class="menu-category-title">Морепродукты</button>
+            <ul class="menu-items">
+                <li>Устрицы</li>
+                <li>Креветки</li>
+                <li>Кальмары</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="burgers">
+            <button class="menu-category-title">Бургеры</button>
+            <ul class="menu-items">
+                <li>Чизбургер</li>
+                <li>Бургер с беконом</li>
+                <li>Вегетарианский бургер</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="steaks">
+            <button class="menu-category-title">Стейки</button>
+            <ul class="menu-items">
+                <li>Рибай</li>
+                <li>Т-бон</li>
+                <li>Филе-миньон</li>
+            </ul>
+        </div>
+        <div class="menu-category" id="sauces">
+            <button class="menu-category-title">Соусы</button>
+            <ul class="menu-items">
+                <li>Барбекю</li>
+                <li>Греческий</li>
+                <li>Чесночный</li>
             </ul>
         </div>
     </div>
