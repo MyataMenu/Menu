@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myata-Platinum</title>
+    <title>Myata Platinum</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,26 +15,44 @@
         </video>
     </div>
    </header>
-<h1 class="menum">Меню Myata</h1>
-<br><br>
-    <main>
-        <div class="categories">
-            <a href="menu.html?category=soups" class="category">🥣 Супы</a>
-            <a href="menu.html?category=main" class="category">🍖 Горячее</a>
-            <a href="menu.html?category=desserts" class="category">🍰 Десерты</a>
-            <a href="menu.html?category=drinks" class="category">🥤 Напитки</a>
+   <h1 class="menum">Меню Myata</h1>
+   <main>
+    <div class="categories">
+        <a href="#" class="category" onclick="toggleMenu('kitchen')"><span>🍽 Кухня</span></a>
+        <a href="#" class="category" onclick="toggleMenu('bar')"><span>🍸 Бар</span></a>
+        <a href="#" class="category" onclick="toggleMenu('hookah')"><span>🧉 Hookah</span></a>
+
+        <div id="kitchen" class="menu-list">
+            <ul>
+                <li>Суп с курицей</li>
+                <li>Борщ</li>
+                <li>Грибной крем-суп</li>
+            </ul>
         </div>
-    </main>
-   
+
+        <div id="bar" class="menu-list">
+            <ul>
+                <li>Коктейль "Мохито"</li>
+                <li>Кофе латте</li>
+                <li>Виски с колой</li>
+            </ul>
+        </div>
+
+        <div id="hookah" class="menu-list">
+            <ul>
+                <li>Арбузный микс</li>
+                <li>Лесной плод</li>
+                <li>Ментоловый</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
 <script defer>
-    document.addEventListener("DOMContentLoaded", function () {
-        let video = document.getElementById("header-video");
-        if (video) {
-            video.play().catch(error => console.error("Ошибка при запуске видео:", error));
-        }
-    });
+    function toggleMenu(menuId) {
+        var menu = document.getElementById(menuId);
+        menu.classList.toggle('active');
+    }
 </script>
-
-
 </body>
 </html>
