@@ -25,16 +25,19 @@ header {
 .video-container {
     position: relative;
     width: 100%;
-    max-height: 300px; /* Высота видео */
+    max-height: 300px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-container video {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Обрезает видео, чтобы заполняло контейнер */
-    filter: brightness(80%); /* Затемняет видео, чтобы текст был виден */
+    object-fit: cover;
 }
+
 
 /* Категории */
 .categories {
