@@ -88,6 +88,12 @@ header video {
     transform: scale(1.07);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
+.category img.category-icon {
+    width: 40px;  /* Размер иконки */
+    height: 40px; /* Высота иконки */
+    object-fit: contain; /* Сохраняем пропорции иконки */
+    margin-bottom: -10px; /* Расстояние между иконкой и текстом */
+}
 
 /* Подгоняем текст поверх изображения */
 .category span {
