@@ -55,12 +55,13 @@ header {
 
 /* Карточка блюда */
 .menu-item {
-    background: #fff;
-    padding: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .menu-item:hover {
     transform: scale(1.05);
