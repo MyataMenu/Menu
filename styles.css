@@ -23,21 +23,21 @@ header {
     font-weight: 600;
     font-size: 20px;
 }
+/* Контейнер для видео */
 .video-container {
     position: relative;
     width: 100%;
-    max-height: 300px;
+    height: 200px; /* Высота, чтобы видео было компактным */
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+/* Само видео */
 .video-container video {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Обрезает лишнее и делает адаптивным */
 }
+
 
 
 /* Категории */
