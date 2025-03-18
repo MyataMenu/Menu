@@ -27,17 +27,19 @@ body {
 /* Контейнер с видео */
 .video-container {
     position: relative;
-    top: 10px;
     width: 100%;
-    height: 300px;
+    max-height: 300px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Видео */
 #header-video {
-    position: relative;
-    margin: 1px auto;
-    display: block;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
