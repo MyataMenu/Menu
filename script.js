@@ -1,20 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const categories = document.querySelector(".categories");
-    const leftBtn = document.querySelector(".scroll-btn.left");
-    const rightBtn = document.querySelector(".scroll-btn.right");
+    const categories = document.querySelectorAll(".category"); // Все кнопки категорий
+    const menuCategories = document.querySelectorAll(".menu-category"); // Все секции меню
+    const categoriesContainer = document.querySelector(".categories"); // Контейнер с категориями
 
-    // Прокрутка колесиком мышки
-    categories.addEventListener("wheel", (e) => {
-        e.preventDefault();
-        categories.scrollLeft += e.deltaY * 2; // Ускоренный скролл
+    // Скрываем все категории при загрузке
+    menuCategories.forEach(menu => {
+        menu.classList.remove("active");
+        menu.style.display = "none";
     });
 
-    // Прокрутка кнопками
-    leftBtn.addEventListener("click", () => {
-        categories.scrollLeft -= 200; // Прокрутка влево
+    categories.forEach(category => {
+        category.addEventListener("click", function () {
+            const selectedCategory = this.getAttribute("data-category"); // Получаем имя категории
+            const activeMenu = document.getElementById(selectedCategory); // Находим соответствующий блок
+
+            if (activeMenu) {
+                // Скрываем все категории перед показом нужной
+                menuCategories.forEach(menu => {
+                    menu.classList.remove("active");
+                    menu.style.display = "none";
+                });
+
+                // Показываем выбранную категорию
+                activeMenu.style.display = "block";
+                setTimeout(() => activeMenu.classList.add("active"), 10);
+                activeMenu.scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+                console.error(`Элемент с id="${selectedCategory}" не найден.`);
+            }
+        });
     });
 
-    rightBtn.addEventListener("click", () => {
-        categories.scrollLeft += 200; // Прокрутка вправо
+    // Горизонтальный скролл категорий при наведении
+    categoriesContainer.addEventListener("wheel", function (event) {
+        this.scrollBy({ left: event.deltaY * 0.5, behavior: "smooth" });
+        event.preventDefault();
     });
 });
