@@ -239,18 +239,23 @@ body {
 }
 
 
-.category, .subcategory {
+.category {
     position: relative;
+    left: 20px;
+    font-size: 12px; /* Уменьшаем размер шрифта */
+    padding: 8px 10px; /* Меньше отступы */
+    width: 140px; /* Фиксированная ширина */
+    height: 20px; /* Фиксированная высота */
+    border-radius: 5px;
+    text-align: center; /* Центрируем текст */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 2px 0;
-    width: 160px;
+    justify-content: center;
+    white-space: nowrap; /* Запрещаем перенос текста */
+    overflow: hidden; /* Скрываем выходящий текст */
+    text-overflow: ellipsis; /* Добавляем "..." если текст не помещается */
 }
+
 
 .submenu-toggle {
     background: none;
@@ -275,6 +280,35 @@ body {
     z-index: 10;
 }
 
+.category, #header-video {
+    user-select: none; /* Запрещает выделение текста */
+    -webkit-user-select: none; /* Для Safari */
+    -moz-user-select: none; /* Для Firefox */
+    -ms-user-select: none; /* Для Edge */
+}
 
+#header-video {
+    pointer-events: none; /* Запрещает любые клики и выделения */
+}
+
+/* Начальная прозрачность */
+body {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Когда страница загружена */
+body.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Эффект плавного исчезновения перед уходом со страницы */
+.fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
 
 
