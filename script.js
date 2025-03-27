@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById("header-video");
     if (video) {
-        video.playbackRate = 3.5; // Ускоряем видео в 1.5 раза
+        video.playbackRate = 2.5; // Ускоряем видео в 1.5 раза
     }
 });
 document.addEventListener("DOMContentLoaded", function () {
