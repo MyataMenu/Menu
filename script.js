@@ -33,7 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Горизонтальный скролл категорий при наведении
     categoriesContainer.addEventListener("wheel", function (event) {
-        this.scrollBy({ left: event.deltaY * 0.5, behavior: "smooth" });
-        event.preventDefault();
-    });
+    if (Math.abs(event.deltaX) < Math.abs(event.deltaY)) return; // Оставляем вертикальную прокрутку
+    this.scrollBy({ left: event.deltaY * 0.5, behavior: "smooth" });
+    event.preventDefault();
+});
+
 });
