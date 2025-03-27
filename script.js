@@ -42,25 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById("header-video");
     if (video) {
-        video.playbackRate = 2.5; // Ускоряем видео в 1.5 раза
+        video.playbackRate = 3.5; // Ускоряем видео в 1.5 раза
     }
-});
-document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("loaded");
-
-    // Добавляем эффект перед уходом со страницы
-    document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", function (event) {
-            const href = this.getAttribute("href");
-
-            // Проверяем, чтобы ссылка не вела на якорь (#)
-            if (href && !href.startsWith("#") && !href.startsWith("javascript")) {
-                event.preventDefault();
-                document.body.classList.add("fade-out");
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 400); // Время должно совпадать с CSS (0.4s)
-            }
-        });
-    });
 });
