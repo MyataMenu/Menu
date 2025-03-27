@@ -242,7 +242,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #f5a623;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -271,13 +270,4 @@ body {
     width: 180px;
     overflow: hidden;
     z-index: 10;
-}
-
-.subcategory {
-    background: #ffcc80;
-    color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
