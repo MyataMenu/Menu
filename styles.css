@@ -81,6 +81,7 @@ body {
     border: 1px solid #ddd; /* Добавим тонкую границу */
 }
 
+
 .category:hover {
     background-color: #ff6655;
     transform: scale(1.1);
@@ -243,12 +244,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    margin: 5px 0;
-    width: 200px;
+    margin: 2px 0;
+    width: 160px;
 }
 
 .submenu-toggle {
@@ -273,3 +274,7 @@ body {
     overflow: hidden;
     z-index: 10;
 }
+
+
+
+
