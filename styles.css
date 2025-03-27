@@ -241,7 +241,7 @@ body {
 
 .category {
     position: relative;
-    left: 20px;
+    left: 18px;
     font-size: 12px; /* Уменьшаем размер шрифта */
     padding: 8px 10px; /* Меньше отступы */
     width: 140px; /* Фиксированная ширина */
@@ -278,35 +278,4 @@ body {
     width: 180px;
     overflow: hidden;
     z-index: 10;
-}
-
-.category, #header-video {
-    user-select: none; /* Запрещает выделение текста */
-    -webkit-user-select: none; /* Для Safari */
-    -moz-user-select: none; /* Для Firefox */
-    -ms-user-select: none; /* Для Edge */
-}
-
-#header-video {
-    pointer-events: none; /* Запрещает любые клики и выделения */
-}
-
-/* Начальная прозрачность */
-body {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-}
-
-/* Когда страница загружена */
-body.loaded {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Эффект плавного исчезновения перед уходом со страницы */
-.fade-out {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
