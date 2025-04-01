@@ -11,7 +11,362 @@ body {
     color: #333; /* Темный текст */
 }
 
+/* Заголовок *//* Общие стили для страницы */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #000000; /* Светлый фон */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333; /* Темный текст */
+}
+
 /* Заголовок */
+.menum {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    box-shadow: 5px 2px 11px 1px rgba(160, 163, 158, 0.7);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("assets/images/back/myat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Контейнер с видео */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Видео */
+#header-video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3 в ряд */
+    gap: 10px;
+    justify-content: center;
+}
+/* Стилизация скролла невидимый для Chrome, Edge, Safari */
+.categories::-webkit-scrollbar {
+    height: 6px;
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.categories::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Кнопки категорий */
+.category {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    background:  url("assets/images/back/myat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    white-space: nowrap;
+    border: 1px solid #ddd; /* Добавим тонкую границу */
+}
+
+
+.category:hover {
+    background-color: #ff6655;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+
+.category-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+
+
+/* Заголовки категорий */
+.menu-category-title {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.menu-category-title:hover {
+    background-color: #ff3366;
+}
+
+
+
+/* Контейнер для карточек - адаптивный */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 3 в ряд */
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+/* Стиль для блюд */
+.menu-items li {
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Эффект при наведении */
+.menu-items li:hover {
+    background-color: rgba(240, 240, 240, 0.9);
+    transform: translateX(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Карточка блюда */
+.menu-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* Изображение в карточке */
+.menu-card img {
+    width: 100%;
+    height: 140px; /* Уменьшаем */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Контент карточки */
+.menu-card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Название блюда */
+.menu-card-title {
+    font-size: 16px; /* Меньше */
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* Состав и цена */
+.menu-card-desc {
+    font-size: 12px; /* Меньше */
+    color: #666;
+    text-align: left;
+    line-height: 1.2; /* Цена справа */
+}
+
+/* Анимация при наведении */
+.menu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgb(255, 250, 250);
+}
+
+@media (max-width: 768px) {
+    .categories, .menu-items {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 2 в ряд */
+    }
+}
+
+/* Анимация на мобильных при тапе */
+@media (hover: none) {
+    .menu-card:active {
+        transform: scale(0.98);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+}
+.menu-category {
+    display: none; /* По умолчанию скрыто */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+   
+}
+
+/* Когда категория должна быть видимой */
+.menu-category.show {
+    display: block;
+    position: relative; /* Убирает скачки */
+}
+
+/* Добавляем плавное появление */
+.menu-category.fade-in {
+    opacity: 1;
+}
+
+.menu-category.active {
+    display: block;
+    opacity: 1;
+}
+
+
+.menu-card-price {
+    float: right;
+    font-weight: bold;
+    color: #ff3366;
+    font-size: 14px;
+}
+
+
+.category {
+    position: relative;
+    left: 18px;
+    font-size: 12px; /* Уменьшаем размер шрифта */
+    padding: 8px 10px; /* Меньше отступы */
+    width: 140px; /* Фиксированная ширина */
+    height: 20px; /* Фиксированная высота */
+    border-radius: 5px;
+    text-align: center; /* Центрируем текст */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* Запрещаем перенос текста */
+    overflow: hidden; /* Скрываем выходящий текст */
+    text-overflow: ellipsis; /* Добавляем "..." если текст не помещается */
+}
+
+
+.submenu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 180px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.back-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Фиксируем высоту */
+    background: black; /* Фон, чтобы не было скачков */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.price-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.price-button{
+    background: url(/assets/images/back/myat.jpg);
+    background-size: cover;
+    
+}
 .menum {
     text-align: center;
     font-size: 24px;
