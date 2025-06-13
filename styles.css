@@ -15,6 +15,7 @@ body {
    justify-content: center; /* Центровка по горизонтали */
    align-items: center;     /* Центровка по вертикали (если задана высота) */
    height: 150px;           /* Примерная высота шапки — можно изменить */
+   transition-duration:0.5s;
 }
 
 .Loggg img {
