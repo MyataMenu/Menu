@@ -50,7 +50,7 @@ body {
     margin-top: 10px;
     font-weight: 700;
     box-shadow: 0 4px 8px rgba(155, 155, 5, 0.62);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("assets/images/back/Gold.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("assets/images/back/myat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -80,7 +80,7 @@ body {
     align-items: center;
     padding: 10px 15px;
     color: black;
-    background: white  ;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("assets/images/back/myat.jpg")
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
