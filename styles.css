@@ -80,7 +80,7 @@ body {
     align-items: center;
     padding: 10px 15px;
     color: black;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("assets/images/back/myat.jpg")
+    background: url("assets/images/back/myat.jpg")
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
