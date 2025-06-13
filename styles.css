@@ -321,7 +321,7 @@ body {
 .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(9, 149, 236, 0.627);
+    box-shadow: 0 4px 8px rgba(155, 155, 5, 0.62);
     text-align: center;
     overflow: hidden;
     position: relative;
