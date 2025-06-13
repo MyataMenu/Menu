@@ -81,7 +81,7 @@ body {
     padding: 10px 15px;
     color: black;
     background: white  ;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
     cursor: pointer;
