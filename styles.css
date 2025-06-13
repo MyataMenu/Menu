@@ -80,8 +80,8 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    color: white;
-    background:  url("assets/images/back/Gold.jpg");
+    color: black;
+    background:  ;
     background-repeat: none;
     background-size: cover;
     border-radius: 8px;
