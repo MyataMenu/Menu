@@ -45,3 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
         video.playbackRate = 3.5; // Ускоряем видео в 1.5 раза
     }
 });
+<script>
+document.querySelectorAll(".category").forEach(cat => {
+    const id = cat.getAttribute("data-category");
+    if (!document.getElementById(id)) {
+        const div = document.createElement("div");
+        div.className = "menu-category";
+        div.id = id;
+        div.style.display = "none";
+        div.textContent = `Заглушка для категории "${id}"`;
+        document.body.appendChild(div);
+    }
+});
+</script>
+
