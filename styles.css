@@ -10,18 +10,6 @@ body {
     background-size: cover;
     color: #333; /* Темный текст */
 }
-.Loggg {
-   display: flex;
-   justify-content: center; /* Центровка по горизонтали */
-   align-items: center;     /* Центровка по вертикали (если задана высота) */
-   height: 200px;           /* Примерная высота шапки — можно изменить */
-}
-
-.Loggg img {
-   max-width: 200px;        /* Уменьшает логотип — меняйте по вкусу */
-   height: auto;            /* Сохраняет пропорции */
-}
-
 
 /* Заголовок */
 .menum {
@@ -49,10 +37,30 @@ body {
     padding: 10px;
     margin-top: 10px;
     font-weight: 700;
-    box-shadow: 0 4px 8px rgba(155, 155, 5, 0.62);
-    background: url("assets/images/back/myat.jpg");
+    box-shadow: 0 4px 8px rgba(4, 140, 224, 0.582);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("assets/images/menu/dim2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Контейнер с видео */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Видео */
+#header-video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .categories {
@@ -79,9 +87,9 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    color: black;
-    background: white;
-    background-repeat:no-repeat;
+    color: white;
+    background:  url("assets/images/back/myat.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
     cursor: pointer;
@@ -244,7 +252,7 @@ body {
 .menu-card-price {
     float: right;
     font-weight: bold;
-    color: gold;
+    color: #ff3366;
     font-size: 14px;
 }
 
@@ -307,6 +315,17 @@ body {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Фиксируем высоту */
+    background: black; /* Фон, чтобы не было скачков */
+}
 
 .cards-container {
     display: grid;
@@ -320,7 +339,7 @@ body {
 .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(155, 155, 5, 0.62);
+    box-shadow: 0 4px 8px rgba(9, 149, 236, 0.627);
     text-align: center;
     overflow: hidden;
     position: relative;
