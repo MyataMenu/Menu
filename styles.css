@@ -103,9 +103,8 @@ body {
 
 
 .category:hover {
-    background-color: #ff6655;
     transform: scale(1.1);
-    color: #fff;
+    color: #ffe000;
 }
 
 
