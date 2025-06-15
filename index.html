@@ -7,43 +7,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <header>
-      <div class="Loggg">
-         <img src="assets/images/back/videos/MyataP.avif" alt="Логотип">
-         <!-- Можно добавить alt для доступности -->
-      </div>
-    </header> 
-    <h1 class="menum">Добро пожаловать в Мяту!</h1>
- <main> 
-    <a href="hookah.html">
+   <header>
+    <div class="video-container">
+        <video id="header-video" autoplay muted playsinline>
+            <source src="assets/images/back/videos/restaurant.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+   </header>
+
+   <h1 class="menum">Добро пожаловать в Мяту!</h1>
+
+   <main>
+    <div class="categories">
+        <a href="hookah.html">
         <div class="category" data-category="hookah">Hookah</div>
-    </a>
-    <a href="menu.html">
+        </a>
+        <a href="menu.html">
         <div class="category" data-category="bar">Бар</div>
     </a>
-     <!-- Категории -->
-            <div class="category" data-category="sushi">🍣 Суши</div>
-            <div class="category" data-category="rolls">🍣 Роллы</div>
-            <div class="category" data-category="company-dishes">🥘 Блюда на компанию</div>
-            <div class="category" data-category="beer-set-1">🍺 Пивной сет №1-2-3</div>
-            <div class="category" data-category="beer-snacks">🍟 Закуски к пиву</div>
-            <div class="category" data-category="cold-snacks">🥗 Холодные закуски</div>
-            <div class="category" data-category="salads">🥗 Салаты</div>
-            <div class="category" data-category="snacks">🍢 Закуски</div>
-            <div class="category" data-category="poultry">🍗 Вторые блюда из птицы</div>
-            <div class="category" data-category="meat">🥩 Вторые блюда мясные</div>
-            <div class="category" data-category="fish">🐟 Вторые блюда рыбные</div>
-            <div class="category" data-category="desserts">🍰 Десерты</div>
-            <div class="category" data-category="pasta">🍝 Паста</div>
-            <div class="category" data-category="pizza">🍕 Пицца</div>
-            <div class="category" data-category="bread">🍞 Хлеб</div>
-            <div class="category" data-category="first-dishes">🥣 Первые блюда</div>
-            <div class="category" data-category="steaks">🥩 Стейки</div>
-            <div class="category" data-category="streetfood">🍔 StreetFood</div>
-            <div class="category" data-category="side-dishes">🍚 Гарниры</div>
-            <div class="category" data-category="sauce">🫙 Соус</div>
-            <div class="category" data-category="bbq">🔥 Мангал-Шашлыки</div>
-     </div>
+        <div class="category" data-category="sushi">🍣 Суши</div>
+        <div class="category" data-category="rolls">🍣 Роллы</div>
+        <div class="category" data-category="company-dishes">🥘 Блюда на компанию</div>
+        <div class="category" data-category="beer-set-1">🍺 Пивной сет №1-2-3</div>
+        <div class="category" data-category="beer-snacks">🍟 Закуски к пиву</div>
+        <div class="category" data-category="cold-snacks">🥗 Холодные закуски</div>
+        <div class="category" data-category="salads">🥗 Салаты</div>
+        <div class="category" data-category="snacks">🍢 Закуски</div>
+        <div class="category" data-category="poultry">🍗 Вторые блюда из птицы</div>
+        <div class="category" data-category="meat">🥩 Вторые блюда мясные</div>
+        <div class="category" data-category="fish">🐟 Вторые блюда рыбные</div>
+        <div class="category" data-category="desserts">🍰 Десерты</div>
+        <div class="category" data-category="pasta">🍝 Паста</div>
+        <div class="category" data-category="pizza">🍕 Пицца</div>
+        <div class="category" data-category="bread">🍞 Хлеб</div>
+        <div class="category" data-category="first-dishes">🥣 Первые блюда</div>
+        <div class="category" data-category="steaks">🥩 Стейки</div>
+        <div class="category" data-category="streetfood">🍔 StreetFood</div>
+        <div class="category" data-category="side-dishes">🍚 Гарниры</div>
+        <div class="category" data-category="sauce">🫙 Соус</div>
+        <div class="category" data-category="bbq">🔥 Мангал-Шашлыки</div>
+    </div>
     <!--Суши-->
     <div class="menu-category" id="sushi">
         <div class="menu-items">
@@ -69,7 +73,7 @@
                 <img src="assets/images/sushi_shrimp.jpg" alt="Суши Креветка">
                 <div class="menu-card-content">
                     <div class="menu-card-title">Сет Мята на 5 персон </div>
-                    <div class="menu-card-desc">Филадельфия/Калифорния/Суши нигири/Эби темпура/Креветки темпура/Сенсей  маки</div>
+                    <div class="menu-card-desc">Филадельфие/Калифорния/Суши нигири/Эби темпура/Креветки темпура/Сенсей  маки</div>
                     <span class="menu-card-price">17 990&#8376;</span>
                 </div>
             </div>
@@ -181,7 +185,7 @@
                 <img src="assets/images/menu/pizrol.jpg" alt="Чёрный ролл">
                 <div class="menu-card-content">
                     <div class="menu-card-title">Пицца ролл</div>
-                    <div class="menu-card-desc">
+                    <div class="menu-card-desc"></div>
                     <span class="menu-card-price">3 890&#8376;</span>
                 </div>
             </div>
@@ -1352,9 +1356,10 @@
         </div>
     </div>
 </div>
-    </div>
-            </div>
- </main>
+
+
+
+   </main>
 
    <script src="script.js"></script>
 </body>
