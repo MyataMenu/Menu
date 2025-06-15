@@ -87,7 +87,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    color: white;
+    color: gold;
     background:  url("assets/images/back/myat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,7 +252,7 @@ body {
 .menu-card-price {
     float: right;
     font-weight: bold;
-    color: #ff3366;
+    color: gold;
     font-size: 14px;
 }
 
