@@ -94,7 +94,6 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 8px;
     font-weight: bold;
     white-space: nowrap;
     border: 1px solid #ddd; /* Добавим тонкую границу */
