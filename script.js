@@ -44,4 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
     if (video) {
         video.playbackRate = 3.5; // Ускоряем видео в 1.5 раза
     }
-});
+}); 
