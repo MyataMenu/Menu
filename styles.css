@@ -260,7 +260,7 @@ body {
 .category {
     position: relative;
     left: 18px;
-    font-size: 12px; /* Уменьшаем размер шрифта */
+    font-size: 11px; /* Уменьшаем размер шрифта */
     padding: 8px 10px; /* Меньше отступы */
     width: 140px; /* Фиксированная ширина */
     height: 20px; /* Фиксированная высота */
