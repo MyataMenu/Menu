@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         video.playbackRate = 3.5; // Ускоряем видео в 1.5 раза
     }
 });
-<script>
+
 document.querySelectorAll(".category").forEach(cat => {
     const id = cat.getAttribute("data-category");
     if (!document.getElementById(id)) {
@@ -57,5 +57,5 @@ document.querySelectorAll(".category").forEach(cat => {
         document.body.appendChild(div);
     }
 });
-</script>
+
 
