@@ -1,3 +1,16 @@
+// Сначала создаём заглушки
+document.querySelectorAll(".category").forEach(cat => {
+    const id = cat.getAttribute("data-category");
+    if (!document.getElementById(id)) {
+        const div = document.createElement("div");
+        div.className = "menu-category";
+        div.id = id;
+        div.style.display = "none";
+        div.textContent = `Заглушка для категории "${id}"`;
+        document.body.appendChild(div);
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const categories = document.querySelectorAll(".category"); // Все кнопки категорий
     const menuCategories = document.querySelectorAll(".menu-category"); // Все секции меню
@@ -33,29 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Горизонтальный скролл категорий при наведении
     categoriesContainer.addEventListener("wheel", function (event) {
-    if (Math.abs(event.deltaX) < Math.abs(event.deltaY)) return; // Оставляем вертикальную прокрутку
-    this.scrollBy({ left: event.deltaY * 0.5, behavior: "smooth" });
-    event.preventDefault();
-});
+        if (Math.abs(event.deltaX) < Math.abs(event.deltaY)) return; // Оставляем вертикальную прокрутку
+        this.scrollBy({ left: event.deltaY * 0.5, behavior: "smooth" });
+        event.preventDefault();
+    });
 
-});
-document.addEventListener("DOMContentLoaded", function () {
+    // Видео ускорение (если видео остался)
     const video = document.getElementById("header-video");
     if (video) {
-        video.playbackRate = 3.5; // Ускоряем видео в 1.5 раза
+        video.playbackRate = 3.5;
     }
 });
-
-document.querySelectorAll(".category").forEach(cat => {
-    const id = cat.getAttribute("data-category");
-    if (!document.getElementById(id)) {
-        const div = document.createElement("div");
-        div.className = "menu-category";
-        div.id = id;
-        div.style.display = "none";
-        div.textContent = `Заглушка для категории "${id}"`;
-        document.body.appendChild(div);
-    }
-});
-
-
